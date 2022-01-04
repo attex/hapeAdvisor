@@ -455,6 +455,8 @@ class _MyHomePageState extends State<MyHomePage> {
       onPressed: () {
         setState(() {
           filterselected[index] = !filterselected[index];
+          _markerList = _generateMarker();
+          _dataList = generateSortedEntries();
         });
       },
     );
